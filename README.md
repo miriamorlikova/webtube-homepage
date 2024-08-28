@@ -1,5 +1,13 @@
 # React + TypeScript + Vite
 
+Credits:
+
+This website was made following the "How To Create The YouTube Home Page With Tailwind, React, and TypeScript" tutorial. Big thanks to @WebDevSimplified.
+
+YT video link: https://www.youtube.com/watch?v=ymGB1lqP1CM&t=4666s
+
+
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
