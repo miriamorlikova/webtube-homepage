@@ -22,7 +22,7 @@ export default function SmallSidebarItem({
       )}
     >
       <Icon clasName="w-6 h-6" />
-      <div className="text-xs">{title}</div>
+      <div className="text-xs capitalize">{title}</div>
     </a>
   );
 }
