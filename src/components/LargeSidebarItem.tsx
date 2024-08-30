@@ -3,14 +3,14 @@ import { twMerge } from "tailwind-merge";
 import { buttonStyles } from "./Button";
 
 type LargeSidebarItemProps = {
-  Icon: ElementType;
+  IconOrUrl: ElementType | string;
   title: string;
   url: string;
   isActive?: boolean;
 };
 
 export default function LargeSidebarItem({
-  Icon,
+  IconOrUrl,
   title,
   url,
   isActive = false,
@@ -25,7 +25,11 @@ export default function LargeSidebarItem({
         }`
       )}
     >
-      <Icon className="w-6 h-6" />
+      {typeof IconOrUrl === "string" ? (
+        <img src={IconOrUrl} className="rounded-full w-6 h-6" />
+      ) : (
+        <IconOrUrl className="w-6 h-6" />
+      )}
       <div className="whitespace-nowrap overflow-hidden text-ellipsis capitalize">
         {title}
       </div>

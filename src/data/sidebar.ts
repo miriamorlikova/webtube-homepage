@@ -27,7 +27,7 @@ export const subscriptions = [
     channelName: "Sonny Sangha",
     id: "SonnySangha",
     imgUrl:
-      "https://yt3.ggpht.com/FjeN785fVWx0Pr6xCbwPhhq8hHj_gocc3FygDXYDEQgp2gE_FQzRNsFHFAjQ3oE-VJaeGR1a=s68-c-k-c0x00ffffff-no-rj",
+      "https://yt3.googleusercontent.com/wDwyoG0x4N9D0ihYzRNxCNrJPgoO6cAU8IkBU2CNhrj6aKXxCPzy_gqS_1gOrRxwhgofEQTxT4s=s900-c-k-c0x00ffffff-no-rj",
   },
   {
     channelName: "Traversy Media",
