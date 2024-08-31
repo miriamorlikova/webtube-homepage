@@ -1,5 +1,3 @@
-import logo from "../assets/Logo.png";
-import { Menu } from "lucide-react";
 import { Button } from "../components/Button";
 import { RiUser3Line } from "react-icons/ri";
 import { BsBell } from "react-icons/bs";
@@ -8,24 +6,14 @@ import Form from "../components/Form";
 import { GoSearch } from "react-icons/go";
 import { BiSolidMicrophone } from "react-icons/bi";
 import { useState } from "react";
+import PageHeaderFirstSection from "../components/PageHeaderFirstSection";
 
 export default function PageHeader() {
   const [showFullWidth, setShowFullWidth] = useState(false);
 
   return (
     <div className="flex top-0 gap-10 justify-between pt-2 md:pt-2.5 mb-6 mx-4 ">
-      <div
-        className={`gap-4 items-center flex-shrink-0 ${
-          showFullWidth ? "hidden" : "flex"
-        }`}
-      >
-        <Button variant="ghost">
-          <Menu />
-        </Button>
-        <a href="/">
-          <img src={logo} className="h-6" />
-        </a>
-      </div>
+      <PageHeaderFirstSection hidden={showFullWidth} />
       <div className="flex gap-4 flex-grow justify-center">
         <Form
           showFullWidth={showFullWidth}

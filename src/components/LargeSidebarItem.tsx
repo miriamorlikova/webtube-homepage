@@ -26,7 +26,9 @@ export default function LargeSidebarItem({
       )}
     >
       {typeof IconOrUrl === "string" ? (
-        <img src={IconOrUrl} className="rounded-full w-6 h-6" />
+        <>
+          <img src={IconOrUrl} className="rounded-full w-6 h-6" />
+        </>
       ) : (
         <IconOrUrl className="w-6 h-6" />
       )}

@@ -21,7 +21,7 @@ export default function SmallSidebarItem({
         "px-1 py-4 flex flex-col items-center rounded-lg gap-1"
       )}
     >
-      <Icon clasName="w-6 h-6" />
+      <Icon className="w-6 h-6" />
       <div className="text-xs capitalize">{title}</div>
     </a>
   );

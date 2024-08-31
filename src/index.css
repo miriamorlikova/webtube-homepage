@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* * {
-  scrollbar-width: thin;
-  }   for firefox? */
-
 *::-webkit-scrollbar {
   @apply bg-transparent w-2;
 }
@@ -17,6 +13,9 @@
   @apply bg-transparent;
 }
 
+.scrollbar-hidden:hover::-webkit-scrollbar-thumb {
+  @apply bg-secondary-border;
+}
 .scrollbar-hidden:hover::-webkit-scrollbar-thumb {
   @apply bg-secondary-border;
 }
